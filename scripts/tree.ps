@@ -1,0 +1,48 @@
+256.0 0.0 moveto
+
+256.0 256.0 lineto
+
+stroke
+
+0 
+
+19
+
+{
+
+gsave
+
+256.0 256.0 translate dup
+
+rotate
+
+newpath 0.0 0.0 moveto 128.0 0.0 lineto stroke
+
+grestore
+
+10 add
+
+}
+
+repeat
+
+%/tree
+
+%{
+
+%dup
+
+%1.0 gt
+
+%{
+
+%gsave
+
+%translate
+
+%newpath
+
+%2 div dup branch
+
+%grestore 2 div add 2 div 2 div tree gsave translate 90.0 rotate newpath 2 length 2 div dup branch grestore 2 div sub 2 div 2 div tree} { 0.0 0.0 moveto } ifelse } def 256.0 0.0 256.0 tree
+

@@ -1,0 +1,25 @@
+/box % Define a procedure to construct a unit-square path in the
+{ newpath % current user coordinate system, with its lower-left corner at
+0 0 moveto % the origin.
+0 1 lineto
+1 1 lineto
+1 0 lineto
+closepath
+} def
+
+gsave
+
+72 72 scale % Modify the current transformation matrix so that everything
+% subsequently drawn will be 72 times larger; that is, each unit
+% will represent an inch instead of 1⁄72 inch.
+box fill % Draw a unit square with its lower-left corner at the origin and
+% fill it with black. Because the unit size is now 1 inch, this box
+% is 1 inch on a side.
+2 2 translate % Change the transformation matrix again so that the origin is
+% displaced 2 inches in from the left and bottom edges of the
+% page.
+box fill % Draw the box again. This box has its lower-left corner 2 inches
+% up from and 2 inches to the right of the lower-left corner of
+% the page.
+grestore % Restore the saved graphics state. Now we are back to default
+% user space.

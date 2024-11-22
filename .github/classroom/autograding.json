@@ -1,0 +1,15 @@
+{
+  "tests": [
+    {"name" : "Problem 1", "setup" : "", "run" : "./check.sh scripts/box.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 2", "setup" : "", "run" : "./check.sh scripts/sinewave.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 3", "setup" : "", "run" : "./check.sh scripts/cosinewave.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 4", "setup" : "", "run" : "./check.sh scripts/deftest1.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 5", "setup" : "", "run" : "./check.sh scripts/dicttest1.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 6", "setup" : "", "run" : "./check.sh scripts/dicttest2.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 7", "setup" : "", "run" : "./check.sh scripts/dicttest3.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 8", "setup" : "", "run" : "./check.sh scripts/silly", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 9", "setup" : "", "run" : "./check.sh scripts/spiral.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 10", "setup" : "", "run" : "./check.sh scripts/stars.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 },
+    {"name" : "Problem 11", "setup" : "", "run" : "./check.sh scripts/tree.ps", "input" : "", "output" : "", "comparison" : "included", "timeout" : 0.5, "points" : 1 }
+  ]
+}

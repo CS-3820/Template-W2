@@ -1,0 +1,40 @@
+/figure {
+   dup
+   gsave
+   1 dict begin
+
+     % a very ugly star
+     /figurepath {
+       0.0  1.0 moveto
+       0.5 -1.0 lineto
+      -1.0  0.5 lineto 
+       1.0  0.5 lineto 
+      -0.5 -1.0 lineto
+       closepath
+     } def
+     figurepath
+     0.3 setlinewidth 
+     0.1 0.2 0.7 setrgbcolor
+     stroke
+
+     dup
+     figurepath
+     0.2 mul 
+     0.1
+     exch
+     0.1 setrgbcolor
+     fill
+
+   end
+   grestore
+} def
+
+1
+4 {
+  100 100 translate
+	gsave
+  30 30 scale
+  figure
+  grestore
+  1 add
+} repeat
